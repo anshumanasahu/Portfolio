@@ -39,11 +39,11 @@ function scrollActive(){
         const sectionTop = current.offsetTop - 50
         sectionId = current.getAttribute('id')
 
-        if(scroll > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.mav__menu a[href*='+ sectionId + ']').classList.add('active')
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*='+ sectionId + ']').classList.add('active')
         }
         else{
-            document.querySelector('.mav__menu a[href*='+ sectionId + ']').classList.remove('active')
+            document.querySelector('.nav__menu a[href*='+ sectionId + ']').classList.remove('active')
         }
     })
 }
